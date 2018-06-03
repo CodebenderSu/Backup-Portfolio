@@ -1,0 +1,101 @@
+/* Mobile */
+body {
+  background-color: hsl(197, 71%, 90%);
+  overflow: hidden;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 0;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #25d, #1cf, #def, #5ef);
+  border-radius: 50%;
+  border: solid hsl(197, 71%, 30%) 3px;
+}
+.navigation {
+  padding: 20px 0;
+  font-family: 'Alice', sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  color: hsl(197, 71%, 15%);
+}
+.navigation td {
+  width: 33%;
+  padding: 5px 5px;
+  text-align: center;
+}
+.left-drawer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 0;
+  background-color: hsl(197, 71%, 60%);
+  border-right: hsl(197, 71%, 30%) solid 3px;
+  box-shadow: 5px 0px 20px 0 rgba(46, 61, 73, 0.6);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.left-drawer-content {
+  flex: 4;
+  margin: 3vh 3vw;
+  padding: 1vh 1vw;
+  background-color: hsl(197, 71%, 90%);
+  border-radius: 5%;
+  border: solid hsl(197, 71%, 80%) 2px;
+  font-family: 'Alice', sans-serif;
+  font-size: 16px;
+  color: hsl(197, 71%, 15%)
+}
+.right-drawer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 0;
+  background-color: hsl(24, 80%, 60%);
+  border-left: hsl(24, 80%, 30%) solid 3px;
+  box-shadow: -5px 0px 20px 0 rgba(46, 61, 73, 0.6);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.right-drawer-content {
+  flex: 4;
+  margin: 3vh 3vw;
+  padding: 1vh 1vw;
+  background-color: hsl(24, 80%, 90%);
+  border-radius: 5%;
+  border: solid hsl(24, 80%, 80%) 2px;
+  font-family: 'Alice', sans-serif;
+  font-size: 16px;
+  color: hsl(24, 80%, 15%)
+}
+.drawer-header {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: bolder;
+}
+.drawer-footer {
+  flex: 1;
+  width: 33vw;
+  align-self: flex-end;
+}
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+}
+/* Desktop */
+@media only screen and (min-width: 992px) {
+
+}

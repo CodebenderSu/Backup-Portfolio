@@ -1,0 +1,13 @@
+{
+  "About": {
+    "Header": "About Me",
+    "Paragraph1": "I'm a front-end web developer who has been coding since I was 10 years old when I taught myself HTML. My passion for coding was revived a year ago in part due to my love of gaming. Since then, I've built projects using the core front-end languages of HTML, CSS, and JavaScript, as well as some Python and React.js projects.",
+    "Paragraph2": "I'm always eager to learn new technologies and am currently learning React.js, Redux, and React Native. This website was built using my knowledge of React.js.",
+    "Paragraph3": "Outside of coding, I also enjoy biking, stargazing, and food. Additionally, coding languages are not the only languages I've learned, as I've also taken Spanish, Mandarin Chinese, and Japanese classes. Gaming is another passion of mine and I operate a multiplayer Minecraft server, a pastime that I feel draws parallels with coding in its need for problem-solving skills and a developer mindset."
+  },
+  "Contact": {
+    "Header": "Contact Me",
+    "Paragraph1": "My contact and professional information can be found below:",
+    "Paragraph2": "(An AdBlocker browser plugin may prevent the above icons from loading)"
+  }
+}
