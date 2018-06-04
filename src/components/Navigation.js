@@ -5,13 +5,13 @@ class Navigation extends Component {
     return (
       <div className="navigation">
         <tr>
-          <td>About</td>
+          <td><a onClick={this.props.handleAboutClick}>About</a></td>
           <td></td>
-          <td>Contact</td>
+          <td><a onClick={this.props.handleContactClick}>Contact</a></td>
         </tr>
         <tr>
           <td></td>
-          <td>Portfolio</td>
+          <td><a onClick={this.props.handlePortfolioClick}>Portfolio</a></td>
           <td></td>
         </tr>
       </div>
