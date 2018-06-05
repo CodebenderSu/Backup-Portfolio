@@ -9,27 +9,33 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      avatar: false,
       leftDrawer: false,
       rightDrawer: false,
       bottomDrawer: false
     };
   }
+  handleAvatarClick = () => {
+    const toggleStatus = this.state.avatar;
+    this.setState({avatar: !toggleStatus});
+  }
   handleAboutClick = () => {
-    const toggleStatus = this.state.leftDrawer
-    this.setState({leftDrawer: !toggleStatus})
+    const toggleStatus = this.state.leftDrawer;
+    this.setState({leftDrawer: !toggleStatus});
   }
   handleContactClick = () => {
-    const toggleStatus = this.state.rightDrawer
-    this.setState({rightDrawer: !toggleStatus})
+    const toggleStatus = this.state.rightDrawer;
+    this.setState({rightDrawer: !toggleStatus});
   }
   handlePortfolioClick = () => {
-    const toggleStatus = this.state.bottomDrawer
-    this.setState({bottomDrawer: !toggleStatus})
+    const toggleStatus = this.state.bottomDrawer;
+    this.setState({bottomDrawer: !toggleStatus});
   }
   render() {
     return (
       <div className="app">
-        <Avatar />
+        <Avatar status={this.state.avatar}
+                handleAvatarClick={this.handleAvatarClick} />
         <Navigation handleAboutClick={this.handleAboutClick}
                     handleContactClick={this.handleContactClick}
                     handlePortfolioClick={this.handlePortfolioClick} />

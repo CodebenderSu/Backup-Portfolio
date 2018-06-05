@@ -14,7 +14,7 @@ class DrawerContact extends Component {
         </div>
         <img className="drawer-footer" src={fire} alt="fire" />
         <div className="right-drawer-tab" onClick={this.props.handleContactClick}>
-          <i class="fas fa-angle-double-right" />
+          <i className="fas fa-angle-double-right" />
         </div>
       </div>
     )

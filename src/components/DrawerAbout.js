@@ -15,7 +15,7 @@ class DrawerAbout extends Component {
         </div>
         <img className="drawer-footer" src={water} alt="water" />
         <div className="left-drawer-tab" onClick={this.props.handleAboutClick}>
-          <i class="fas fa-angle-double-left" />
+          <i className="fas fa-angle-double-left" />
         </div>
       </div>
     )
