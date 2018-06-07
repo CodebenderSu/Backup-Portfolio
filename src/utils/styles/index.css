@@ -14,11 +14,15 @@ body {
 .avatar-container {
   width: 200px;
   height: 200px;
+  position: relative;
 }
 .avatar {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 1s;
   transform-style: preserve-3d;
 }
@@ -33,29 +37,49 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
   position: absolute;
   background: radial-gradient(#fff, #def, #9ef, #def, #fff);
   border-radius: 50%;
   border: solid hsl(197, 71%, 30%) 3px;
 }
 .avatar-front {
-  z-index: 5;
   transform: rotateY(0deg);
 }
 .avatar-back {
   transform: rotateY(180deg);
 }
 .audio-player {
-  width: 100%;
+  width: 50px;
   position: absolute;
   align-self: center;
   position: absolute;
-  z-index: 4;
 }
 .avatar-flip {
   transform: rotateY(540deg);
 }
-
+.airbending {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.airbending i {
+  font-size: 4em;
+  color: green;
+  z-index: 6;
+  opacity: 0;
+  animation-name: airbending;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes airbending {
+  0% {transform: scale(1) rotate3d(1, 1, 1, -45deg); opacity: 0;}
+  10% {opacity: 1;}
+  100% {transform: scale(0) rotate3d(1, 1, 1, 180deg); opacity: 0;}
+}
 .navigation {
   padding: 20px 0;
   font-family: 'Alice', sans-serif;
