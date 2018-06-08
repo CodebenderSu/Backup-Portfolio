@@ -9,16 +9,17 @@ class Avatar extends Component {
     let flip = this.props.status ? 'avatar-flip' : '';
     return (
       <div className="avatar-container">
-        <Airbending />
         <div className={"avatar " + flip} onClick={this.props.handleAvatarClick}>
-          <div className="avatar-front"> {/* Front Side */}
+{/* Front Side */}
+          <div className="avatar-front">
             <img src={avatar} alt="Avatar"
                  title="Fancy Schmancy Avatar" />
           </div>
-          <div className="avatar-back"> {/* Back Side */}
+{/* Back Side */}
+          <div className="avatar-back">
             <img src={air} alt="Air" />
             <audio className="audio-player" controls
-                   title="'Greatest Change' by Jeremy Zuckerman">
+                   title={"\"Greatest Change\" by Jeremy Zuckerman"}>
               <source src={greatestChange} type="audio/mp3" />
               Your browser does not support this feature.
             </audio>

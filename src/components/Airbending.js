@@ -5,6 +5,9 @@ class Airbending extends Component {
     return (
       <div className="airbending">
         <i class="fab fa-envira" />
+        <i class="fab fa-envira" />
+        <i class="fab fa-envira" />
+        <i class="fab fa-envira" />
       </div>
     );
   };
