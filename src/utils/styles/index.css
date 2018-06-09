@@ -190,6 +190,21 @@ body {
   background-color: hsl(24, 80%, 30%, 85%);
   cursor: pointer;
 }
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact img {
+  flex: 1;
+  margin: 1vh 3vw;
+}
+.subtitle {
+  flex: 3;
+  flex-basis: auto;
+  font-size: 12px!important;
+}
 .bottom-drawer {
   display: flex;
   justify-content: center;
@@ -269,6 +284,9 @@ body {
   .right-drawer-content {
     margin: 3vh 3vw 3vh 5vw;
   }
+  .contact img {
+    margin: 1vh 2vw;
+  }
   .bottom-drawer-content {
     width: auto;
     height: auto;
@@ -289,6 +307,9 @@ body {
   }
   .right-drawer-content {
     margin: 3vh 3vw;
+  }
+  .contact img {
+    margin: 1vh 1vw;
   }
   .drawer-footer {
     width: 33vw;
