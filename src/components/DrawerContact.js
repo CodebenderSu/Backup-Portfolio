@@ -14,21 +14,21 @@ class DrawerContact extends Component {
           <h1 className="drawer-header">{Flavor.Contact.Header}</h1>
           <p>{Flavor.Contact.Paragraph1}</p>
           <div className="contact">
-            <span>
+            <div>
             <a href="mailto:codebendersu@gmail.com">
               <img src={gmail} alt="Gmail" title="Email me" />
             </a>
-            </span>
-            <span>
+            </div>
+            <div>
             <a href="https://github.com/CodebenderSu">
               <img src={github} alt="Github" title="My Github profile" />
             </a>
-            </span>
-            <span>
+            </div>
+            <div>
             <a href="https://www.linkedin.com/in/susan-l-3b388a13a/">
               <img src={linkedin} alt="LinkedIn" title="My LinkedIn" />
             </a>
-            </span>
+            </div>
             <p className="subtitle">{Flavor.Contact.Paragraph2}</p>
           </div>
 

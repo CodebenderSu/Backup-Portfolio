@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import * as Flavor from '../flavor.json';
+import * as Flavor from '../flavor.json';
 import * as earthR from '../utils/images/earthR.png';
 import * as earthL from '../utils/images/earthL.png';
 
@@ -13,9 +13,8 @@ class DrawerPortfolio extends Component {
         </div>
         <img className="drawer-left-margin" src={earthL} alt="earth" />
         <div className="bottom-drawer-content">
-          <h1 className="drawer-header">Portfolio</h1>
-          <p>Paragraph</p>
-          <p>More shit</p>
+          <h1 className="drawer-header">{Flavor.Portfolio.Header}</h1>
+          <p>{Flavor.Portfolio.Paragraph1}</p>
         </div>
         <img className="drawer-right-margin" src={earthR} alt="earth" />
       </div>

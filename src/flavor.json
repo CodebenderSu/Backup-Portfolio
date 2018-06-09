@@ -1,13 +1,17 @@
 {
   "About": {
-    "Header": "About Me",
-    "Paragraph1": "I'm a front-end web developer who has been coding since I was 10 years old when I taught myself HTML. My passion for coding was revived a year ago in part due to my love of gaming. Since then, I've built projects using the core front-end languages of HTML, CSS, and JavaScript, as well as some Python and React.js projects.",
-    "Paragraph2": "I'm always eager to learn new technologies and am currently learning React.js, Redux, and React Native. This website was built using my knowledge of React.js.",
-    "Paragraph3": "Outside of coding, I also enjoy biking, stargazing, and food. Additionally, coding languages are not the only languages I've learned, as I've also taken Spanish, Mandarin Chinese, and Japanese classes. Gaming is another passion of mine and I operate a multiplayer Minecraft server, a pastime that I feel draws parallels with coding in its need for problem-solving skills and a developer mindset."
+    "Header": "About Susan",
+    "Paragraph1": "I'm a web developer with working knowledge of HTML, CSS, JavaScript, Python, React, and more. I'm currently looking for my first job in the industry and am eager to continue learning new technologies over time.",
+    "Paragraph2": "I'm largely self-taught, and first taught myself HTML when I was 10 years old. It wasn't until 2017 that I started learning code again, starting first with freeCodeCamp before enrolling in nanodegree programs via Udacity.",
+    "Paragraph3": "Since then I've continued to learn web development technologies, but have recently taken an interest in AI."
   },
   "Contact": {
-    "Header": "Contact Me",
+    "Header": "Contact",
     "Paragraph1": "My contact and professional information can be found below:",
     "Paragraph2": "(An AdBlocker browser plugin may prevent the above icons from loading)"
+  },
+  "Portfolio": {
+    "Header": "Portfolio",
+    "Paragraph1": "Below are links to some of my past projects:"
   }
 }

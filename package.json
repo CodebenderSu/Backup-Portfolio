@@ -1,6 +1,6 @@
 {
-  "name": "01",
-  "version": "0.1.0",
+  "name": "Portfolio",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "react": "^16.4.0",
