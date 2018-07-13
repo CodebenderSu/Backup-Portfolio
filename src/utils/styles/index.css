@@ -49,12 +49,6 @@ body {
 .avatar-back {
   transform: rotateY(180deg);
 }
-.audio-player {
-  width: 50px;
-  position: absolute;
-  align-self: center;
-  position: absolute;
-}
 .avatar-flip {
   transform: rotateY(540deg);
 }
@@ -104,6 +98,7 @@ body {
 }
 .open-side {
   width: 100vw!important;
+  overflow-y: auto!important;
 }
 .open-bottom {
   height: 100vh!important;
@@ -121,13 +116,14 @@ body {
   top: 0;
   left: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
 }
 .left-drawer-content {
   flex: 4;
   margin: 3vh 9vw 3vh 3vw;
   padding: 1vh 1vw;
-  background-color: hsl(197, 71%, 90%, 80%);
+  background-color: hsla(197, 71%, 90%, 0.8);
   border-radius: 5%;
   border: solid hsl(197, 71%, 80%) 2px;
   font-family: 'Alice', sans-serif;
@@ -135,10 +131,10 @@ body {
   color: hsl(197, 71%, 15%)
 }
 .left-drawer-tab {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 20px;
-  background-color: hsl(197, 71%, 32%, 80%);
+  background-color: hsla(197, 71%, 32%, 0.8);
   border-left: hsl(197, 71%, 30%) solid 3px;
   display: flex;
   justify-content: center;
@@ -146,7 +142,7 @@ body {
   align-self: flex-end;
 }
 .left-drawer-tab:hover {
-  background-color: hsl(197, 71%, 30%, 85%);
+  background-color: hsla(197, 71%, 30%, 0.85);
   cursor: pointer;
 }
 .right-drawer {
@@ -162,13 +158,14 @@ body {
   top: 0;
   right: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
 }
 .right-drawer-content {
   flex: 4;
   margin: 3vh 3vw 3vh 9vw;
   padding: 1vh 1vw;
-  background-color: hsl(24, 80%, 90%, 80%);
+  background-color: hsla(24, 80%, 90%, 0.8);
   border-radius: 5%;
   border: solid hsl(24, 80%, 80%) 2px;
   font-family: 'Alice', sans-serif;
@@ -176,10 +173,10 @@ body {
   color: hsl(24, 80%, 15%)
 }
 .right-drawer-tab {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 20px;
-  background-color: hsl(24, 80%, 32%, 80%);
+  background-color: hsla(24, 80%, 32%, 0.8);
   border-right: hsl(24, 80%, 30%) solid 3px;
   display: flex;
   justify-content: center;
@@ -187,7 +184,7 @@ body {
   align-self: flex-start;
 }
 .right-drawer-tab:hover {
-  background-color: hsl(24, 80%, 30%, 85%);
+  background-color: hsla(24, 80%, 30%, 0.85);
   cursor: pointer;
 }
 .contact {
@@ -197,11 +194,13 @@ body {
   flex-wrap: wrap;
 }
 .contact img {
-  margin: 1vh 3vw;
   flex: 1;
   max-width: 100px;
   max-height: 100px;
   border-radius: 10%;
+}
+.contact a {
+  margin: 1vh 3vw;
 }
 .subtitle {
   flex: 4;
@@ -221,16 +220,17 @@ body {
   z-index: 10;
   bottom: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
 }
 .bottom-drawer-content {
   flex: 4;
-  width: 94vw;
-  height: 90vh;
+  width: 90vw;
+  height: 80vh;
   position: absolute;
   margin: 5vh 3vw;
   padding: 1vh 1vw;
-  background-color: hsl(126, 46%, 90%, 80%);
+  background-color: hsla(126, 46%, 90%, 0.8);
   border-radius: 5%;
   border: solid hsl(126, 46%,, 80%) 2px;
   font-family: 'Alice', sans-serif;
@@ -241,15 +241,45 @@ body {
   position: absolute;
   height: 20px;
   width: 100vw;
-  background-color: hsl(126, 46%, 32%, 80%);
+  background-color: hsla(126, 46%, 32%, 0.8);
   border-bottom: hsl(126, 46%, 30%) solid 3px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .bottom-drawer-tab:hover {
-  background-color: hsl(126, 46%, 30%, 85%);
+  background-color: hsla(126, 46%, 30%, 0.85);
   cursor: pointer;
+}
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portfolio img {
+  flex: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+.portfolio span {
+  visibility: hidden;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #eee;
+  text-align: center;
+  font-size: 14px;
+  width: 90px;
+  height: 90px;
+  border-radius: 10%;
+  padding: 5px;
+}
+.portfolio a {
+  margin: 1vh 3vw;
+}
+.port-item:hover span {
+  visibility: visible;
 }
 .drawer-header {
   font-family: 'Archivo Black', sans-serif;
@@ -288,14 +318,27 @@ body {
   .right-drawer-content {
     margin: 3vh 3vw 3vh 5vw;
   }
-  .contact img {
+  .contact a {
     margin: 1vh 2vw;
   }
   .bottom-drawer-content {
     width: auto;
     height: auto;
-    margin: 5vh 1vw 3vh 1vw;
+    margin: 5vh 1vw 3vh 1vw!important;
     position: static;
+  }
+  .portfolio img {
+    width: 150px;
+    height: 150px;
+  }
+  .portfolio a {
+    margin: 1vh 2vw;
+  }
+  .portfolio span {
+    width: 140px;
+    height: 130px;
+    padding: 10px 5px;
+    font-size: 16px;
   }
   .drawer-footer {
     width: 50vw;
@@ -312,8 +355,21 @@ body {
   .right-drawer-content {
     margin: 3vh 3vw;
   }
-  .contact img {
+  .contact a {
     margin: 1vh 1vw;
+  }
+  .portfolio img {
+    width: 200px;
+    height: 200px;
+  }
+  .portfolio a {
+    margin: 1vh 1vw;
+  }
+  .portfolio span {
+    width: 180px;
+    height: 160px;
+    padding: 20px 10px;
+    font-size: 18px;
   }
   .drawer-footer {
     width: 33vw;

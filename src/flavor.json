@@ -12,6 +12,10 @@
   },
   "Portfolio": {
     "Header": "Portfolio",
-    "Paragraph1": "Below are links to some of my past projects:"
+    "Paragraph1": "Below are links to some of my past projects:",
+    "Span1": "The first webpage I made using CSS",
+    "Span2": "My first project built for Udacity",
+    "Span3": "A website dynamically generated with Python",
+    "Span4": "A memory game made with JavaScript"
   }
 }

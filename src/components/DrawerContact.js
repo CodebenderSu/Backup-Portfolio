@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import * as Flavor from '../flavor.json';
-import * as fire from '../utils/images/fire.png';
+import * as fire from '../utils/images/fire.gif';
 import * as gmail from '../utils/images/gmail.png';
-import * as github from '../utils/images/github.png';
+import * as github from '../utils/images/github.jpg';
 import * as linkedin from '../utils/images/linkedin.png';
 
 class DrawerContact extends Component {

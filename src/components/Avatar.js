@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Airbending from './Airbending.js';
-import * as avatar from '../utils/images/avatar.png';
+import * as avatar from '../utils/images/avatar.jpg';
 import * as air from '../utils/images/air.png';
-import * as greatestChange from '../utils/audio/greatest-change.mp3';
 
 class Avatar extends Component {
   render() {
@@ -18,11 +17,6 @@ class Avatar extends Component {
 {/* Back Side */}
           <div className="avatar-back">
             <img src={air} alt="Air" />
-            <audio className="audio-player" controls
-                   title={"\"Greatest Change\" by Jeremy Zuckerman"}>
-              <source src={greatestChange} type="audio/mp3" />
-              Your browser does not support this feature.
-            </audio>
           </div>
         </div>
       </div>
