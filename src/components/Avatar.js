@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Airbending from './Airbending.js';
 import * as avatar from '../assets/avatar.jpg';
 import * as air from '../assets/air.png';
 

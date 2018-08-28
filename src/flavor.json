@@ -12,32 +12,50 @@
   },
   "Portfolio": {
     "Header": "Portfolio",
-    "Paragraph1": "Below are links to some of my past projects:"
+    "Paragraph1": "Below are links to some of my past projects (newest first):"
   },
   "Item": [
     {
-      "Ref": "https://codebendersu.github.io/tribute-page/",
-      "Desc": "The first webpage I made using CSS",
-      "Img": "https://codebendersu.github.io/item/tribute-page.jpg",
-      "Alt": "Tribute Page"
+      "Src": "https://codebendersu.github.io/Mock-Neopets",
+      "Desc": "Mock webpage built using React and SASS",
+      "Img": "https://codebendersu.github.io/item/mock-neopets.jpg",
+      "Alt": "Mock Neopets"
     },
     {
-      "Ref": "https://codebendersu.github.io/basic-webpage/",
-      "Desc": "My first project built for Udacity",
-      "Img": "https://codebendersu.github.io/item/basic-webpage.jpg",
-      "Alt": "Basic Webpage"
+      "Src": "https://github.com/CodebenderSu/Zhu-Li",
+      "Desc": "A Discord bot built with JavaScript and Node",
+      "Img": "https://codebendersu.github.io/item/zhu-li.jpg",
+      "Alt": "Zhu Li"
     },
     {
-      "Ref": "https://codebendersu.github.io/movie-website/",
-      "Desc": "A website dynamically generated with Python",
+      "Src": "https://codebendersu.github.io/matching-game/",
+      "Desc": "A memory game made with JavaScript for Udacity",
+      "Img": "https://codebendersu.github.io/item/matching-game.jpg",
+      "Alt": "Matching Game"
+    },
+    {
+      "Src": "https://codebendersu.github.io/movie-website/",
+      "Desc": "A Udacity project that uses Python to generate a webpage",
       "Img": "https://codebendersu.github.io/item/movie-website.jpg",
       "Alt": "Movie Website"
     },
     {
-      "Ref": "https://codebendersu.github.io/matching-game/",
-      "Desc": "A memory game made with JavaScript",
-      "Img": "https://codebendersu.github.io/item/matching-game.jpg",
-      "Alt": "Matching Game"
+      "Src": "https://github.com/CodebenderSu/vocab-quiz",
+      "Desc": "A vocabulary quiz program built with Python for Udacity",
+      "Img": "https://codebendersu.github.io/item/vocab-quiz.jpg",
+      "Alt": "Vocab Quiz"
+    },
+    {
+      "Src": "https://codebendersu.github.io/basic-webpage/",
+      "Desc": "Project built using HTML, CSS, and Bootstrap for Udacity",
+      "Img": "https://codebendersu.github.io/item/basic-webpage.jpg",
+      "Alt": "Basic Webpage"
+    },
+    {
+      "Src": "https://codebendersu.github.io/tribute-page/",
+      "Desc": "Webpage built with HTML and CSS for freeCodeCamp",
+      "Img": "https://codebendersu.github.io/item/tribute-page.jpg",
+      "Alt": "Tribute Page"
     }
   ]
 }

@@ -7,6 +7,10 @@ import * as earthL from '../assets/earthL.gif';
 class DrawerPortfolio extends Component {
   render() {
     let open = this.props.status ? 'open-bottom' : '';
+    const items = Item.map((item) => // Generate portfolio items dynamically
+      <PortfolioItem key={item.Alt} src={item.Src} desc={item.Desc}
+        img={item.Img} alt={item.Alt} />
+    );
     return (
       <div className={ "bottom-drawer " + open }>
         <div className="bottom-drawer-tab" onClick={this.props.handlePortfolioClick}>
@@ -17,14 +21,7 @@ class DrawerPortfolio extends Component {
           <h1 className="drawer-header">{Portfolio.Header}</h1>
           <p>{Portfolio.Paragraph1}</p>
           <div className="portfolio">
-            <PortfolioItem ref={Item[0].Ref} desc={Item[0].Desc}
-              img={Item[0].Img} alt={Item[0].Alt} />
-            <PortfolioItem ref={Item[1].Ref} desc={Item[1].Desc}
-              img={Item[1].Img} alt={Item[1].Alt} />
-            <PortfolioItem ref={Item[2].Ref} desc={Item[2].Desc}
-              img={Item[2].Img} alt={Item[2].Alt} />
-            <PortfolioItem ref={Item[3].Ref} desc={Item[3].Desc}
-              img={Item[3].Img} alt={Item[3].Alt} />
+            {items}
           </div>
         </div>
         <img className="drawer-right-margin" src={earthR} alt="earth" />
