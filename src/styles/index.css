@@ -1,0 +1,377 @@
+/* *~*~* Mobile *~*~* */
+body {
+  background-color: hsl(197, 71%, 90%);
+  overflow: hidden;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 0;
+}
+.avatar-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.avatar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.avatar-front, .avatar-back{
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background: radial-gradient(#fff, #def, #9ef, #def, #fff);
+  border-radius: 50%;
+  border: solid hsl(197, 71%, 30%) 3px;
+}
+.avatar-front {
+  transform: rotateY(0deg);
+}
+.avatar-back {
+  transform: rotateY(180deg);
+}
+.avatar-flip {
+  transform: rotateY(540deg);
+}
+/* Airbending, work on adding more instances with variations to the animation */
+.airbending {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.airbending i {
+  font-size: 5em;
+  color: green;
+  position: absolute;
+  display: auto;
+  z-index: 3;
+  opacity: 0;
+  animation-name: airbending;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+@keyframes airbending {
+  0% {transform: scale(1) rotate3d(1, 1, 0, -140deg); opacity: 0; display: block;}
+  10% {opacity: 1;}
+  50% {transform: scale(0.3) rotate3d(0, 1, 1, 0deg);}
+  90% {transform: scale(0.2) rotate3d(1, 0, 0, 140deg);}
+  95% {opacity: 1;}
+  100% {transform: scale(0.2) rotate3d(1, 1, 0, 140deg); opacity: 0; display: none;}
+}
+.navigation {
+  padding: 20px 0;
+  font-family: 'Alice', sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  color: hsl(197, 71%, 15%);
+}
+.navigation td {
+  width: 33%;
+  padding: 5px 5px;
+  text-align: center;
+}
+.navigation a:hover {
+  cursor: pointer;
+  color: hsl(197, 71%, 35%);
+}
+.open-side {
+  width: 100vw!important;
+  overflow-y: auto!important;
+}
+.open-bottom {
+  height: 100vh!important;
+}
+.left-drawer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 0;
+  background: linear-gradient(45deg, #49b3dd, #79caea, #abe0f4);
+  border-right: hsl(197, 71%, 30%) solid 3px;
+  box-shadow: 5px 0px 20px 0 rgba(46, 61, 73, 0.6);
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.left-drawer-content {
+  flex: 4;
+  margin: 3vh 9vw 3vh 3vw;
+  padding: 1vh 1vw;
+  background-color: hsla(197, 71%, 90%, 0.8);
+  border-radius: 5%;
+  border: solid hsl(197, 71%, 80%) 2px;
+  font-family: 'Alice', sans-serif;
+  font-size: 16px;
+  color: hsl(197, 71%, 15%)
+}
+.left-drawer-tab {
+  position: fixed;
+  height: 100vh;
+  width: 20px;
+  background-color: hsla(197, 71%, 32%, 0.8);
+  border-left: hsl(197, 71%, 30%) solid 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+.left-drawer-tab:hover {
+  background-color: hsla(197, 71%, 30%, 0.85);
+  cursor: pointer;
+}
+.right-drawer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 0;
+  background: linear-gradient(315deg, #a54015, #ea8a4b, #f9b761);
+  border-left: hsl(24, 80%, 30%) solid 3px;
+  box-shadow: -5px 0px 20px 0 rgba(46, 61, 73, 0.6);
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.right-drawer-content {
+  flex: 4;
+  margin: 3vh 3vw 3vh 9vw;
+  padding: 1vh 1vw;
+  background-color: hsla(24, 80%, 90%, 0.8);
+  border-radius: 5%;
+  border: solid hsl(24, 80%, 80%) 2px;
+  font-family: 'Alice', sans-serif;
+  font-size: 16px;
+  color: hsl(24, 80%, 15%)
+}
+.right-drawer-tab {
+  position: fixed;
+  height: 100vh;
+  width: 20px;
+  background-color: hsla(24, 80%, 32%, 0.8);
+  border-right: hsl(24, 80%, 30%) solid 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+.right-drawer-tab:hover {
+  background-color: hsla(24, 80%, 30%, 0.85);
+  cursor: pointer;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact img {
+  flex: 1;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 10%;
+}
+.contact a {
+  margin: 1vh 3vw;
+}
+.subtitle {
+  flex: 4;
+  flex-basis: auto;
+  text-align: center;
+  font-size: 12px!important;
+}
+.bottom-drawer {
+  display: flex;
+  justify-content: center;
+  height: 0;
+  width: 100vw;
+  background: linear-gradient(0deg, #6d6543, #3a723f, #4b9652, #63c66d);
+  border-top: hsl(126, 46%, 30%) solid 3px;
+  box-shadow: 5px 0px 20px 0 rgba(46, 61, 73, 0.6);
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.bottom-drawer-content {
+  flex: 4;
+  width: 90vw;
+  height: 80vh;
+  position: absolute;
+  margin: 5vh 3vw;
+  padding: 1vh 1vw;
+  background-color: hsla(126, 46%, 90%, 0.8);
+  border-radius: 5%;
+  border: solid hsl(126, 46%,, 80%) 2px;
+  font-family: 'Alice', sans-serif;
+  font-size: 16px;
+  color: hsl(126, 46%, 15%)
+}
+.bottom-drawer-tab {
+  position: absolute;
+  height: 20px;
+  width: 100vw;
+  background-color: hsla(126, 46%, 32%, 0.8);
+  border-bottom: hsl(126, 46%, 30%) solid 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-drawer-tab:hover {
+  background-color: hsla(126, 46%, 30%, 0.85);
+  cursor: pointer;
+}
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portfolio img {
+  flex: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+.portfolio span {
+  visibility: hidden;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #eee;
+  text-align: center;
+  font-size: 14px;
+  width: 90px;
+  height: 90px;
+  border-radius: 10%;
+  padding: 5px;
+}
+.portfolio a {
+  margin: 1vh 3vw;
+}
+.port-item:hover span {
+  visibility: visible;
+}
+.drawer-header {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: bolder;
+}
+.drawer-footer {
+  flex: 1;
+  width: 100vw;
+  align-self: flex-end;
+  object-fit: cover;
+}
+.drawer-left-margin {
+  flex: 1;
+  height: 100vh;
+  object-fit: cover;
+  object-position: right;
+  overflow-x: hidden;
+  align-self: flex-start;
+}
+.drawer-right-margin {
+  flex: 1;
+  height: 100vh;
+  object-fit: cover;
+  object-position: left;
+  overflow-x: hidden;
+  align-self: flex-end;
+}
+/* *~*~* Tablet *~*~* */
+@media only screen and (min-width: 768px) {
+  .open-side {
+    width: 50vw!important;
+  }
+  .left-drawer-content {
+    margin: 3vh 5vw 3vh 3vw;
+  }
+  .right-drawer-content {
+    margin: 3vh 3vw 3vh 5vw;
+  }
+  .contact a {
+    margin: 1vh 2vw;
+  }
+  .bottom-drawer-content {
+    width: auto;
+    height: auto;
+    margin: 5vh 1vw 3vh 1vw!important;
+    position: static;
+  }
+  .portfolio img {
+    width: 150px;
+    height: 150px;
+  }
+  .portfolio a {
+    margin: 1vh 2vw;
+  }
+  .portfolio span {
+    width: 140px;
+    height: 130px;
+    padding: 10px 5px;
+    font-size: 16px;
+  }
+  .drawer-footer {
+    width: 50vw;
+  }
+}
+/* *~*~* Desktop *~*~* */
+@media only screen and (min-width: 992px) {
+  .open-side {
+    width: 33vw!important;
+  }
+  .left-drawer-content {
+    margin: 3vh 3vw;
+  }
+  .right-drawer-content {
+    margin: 3vh 3vw;
+  }
+  .contact a {
+    margin: 1vh 1vw;
+  }
+  .portfolio img {
+    width: 200px;
+    height: 200px;
+  }
+  .portfolio a {
+    margin: 1vh 1vw;
+  }
+  .portfolio span {
+    width: 180px;
+    height: 160px;
+    padding: 20px 10px;
+    font-size: 18px;
+  }
+  .drawer-footer {
+    width: 33vw;
+  }
+}

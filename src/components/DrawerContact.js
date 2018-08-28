@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import * as Flavor from '../flavor.json';
-import * as fire from '../utils/images/fire.gif';
-import * as gmail from '../utils/images/gmail.png';
-import * as github from '../utils/images/github.jpg';
-import * as linkedin from '../utils/images/linkedin.png';
+import * as fire from '../assets/fire.gif';
+import * as gmail from '../assets/gmail.png';
+import * as github from '../assets/github.jpg';
+import * as linkedin from '../assets/linkedin.png';
 
 class DrawerContact extends Component {
   render() {
@@ -25,7 +25,7 @@ class DrawerContact extends Component {
             </a>
             </div>
             <div>
-            <a href="https://www.linkedin.com/in/susan-l-3b388a13a/">
+            <a href="https://www.linkedin.com/in/codebendersu/">
               <img src={linkedin} alt="LinkedIn" title="My LinkedIn" />
             </a>
             </div>

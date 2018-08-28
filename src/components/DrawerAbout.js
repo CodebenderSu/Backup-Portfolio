@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as Flavor from '../flavor.json';
-import * as water from '../utils/images/water.gif';
+import * as water from '../assets/water.gif';
 
 class DrawerAbout extends Component {
   render() {

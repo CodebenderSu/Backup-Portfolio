@@ -12,10 +12,32 @@
   },
   "Portfolio": {
     "Header": "Portfolio",
-    "Paragraph1": "Below are links to some of my past projects:",
-    "Span1": "The first webpage I made using CSS",
-    "Span2": "My first project built for Udacity",
-    "Span3": "A website dynamically generated with Python",
-    "Span4": "A memory game made with JavaScript"
-  }
+    "Paragraph1": "Below are links to some of my past projects:"
+  },
+  "Item": [
+    {
+      "Ref": "https://codebendersu.github.io/tribute-page/",
+      "Desc": "The first webpage I made using CSS",
+      "Img": "https://codebendersu.github.io/item/tribute-page.jpg",
+      "Alt": "Tribute Page"
+    },
+    {
+      "Ref": "https://codebendersu.github.io/basic-webpage/",
+      "Desc": "My first project built for Udacity",
+      "Img": "https://codebendersu.github.io/item/basic-webpage.jpg",
+      "Alt": "Basic Webpage"
+    },
+    {
+      "Ref": "https://codebendersu.github.io/movie-website/",
+      "Desc": "A website dynamically generated with Python",
+      "Img": "https://codebendersu.github.io/item/movie-website.jpg",
+      "Alt": "Movie Website"
+    },
+    {
+      "Ref": "https://codebendersu.github.io/matching-game/",
+      "Desc": "A memory game made with JavaScript",
+      "Img": "https://codebendersu.github.io/item/matching-game.jpg",
+      "Alt": "Matching Game"
+    }
+  ]
 }

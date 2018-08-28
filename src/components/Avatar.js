@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Airbending from './Airbending.js';
-import * as avatar from '../utils/images/avatar.jpg';
-import * as air from '../utils/images/air.png';
+import * as avatar from '../assets/avatar.jpg';
+import * as air from '../assets/air.png';
 
 class Avatar extends Component {
   render() {
