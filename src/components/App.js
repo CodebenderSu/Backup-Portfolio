@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Avatar from './Avatar.js';
 import Navigation from './Navigation.js';
-import DrawerAbout from './DrawerAbout.js';
-import DrawerContact from './DrawerContact.js';
-import DrawerPortfolio from './DrawerPortfolio.js';
+import About from './drawers/About.js';
+import Contact from './drawers/Contact.js';
+import Portfolio from './drawers/Portfolio.js';
 
 class App extends Component {
   constructor(props) {
@@ -40,11 +40,11 @@ class App extends Component {
                     handleContactClick={this.handleContactClick}
                     handlePortfolioClick={this.handlePortfolioClick} />
 
-        <DrawerAbout status={this.state.leftDrawer}
+        <About status={this.state.leftDrawer}
                      handleAboutClick={this.handleAboutClick} />
-        <DrawerContact status={this.state.rightDrawer}
+        <Contact status={this.state.rightDrawer}
                        handleContactClick={this.handleContactClick} />
-        <DrawerPortfolio status={this.state.bottomDrawer}
+        <Portfolio status={this.state.bottomDrawer}
                          handlePortfolioClick={this.handlePortfolioClick} />
       </div>
     );
